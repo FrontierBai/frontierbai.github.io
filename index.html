@@ -27,6 +27,6 @@
   
   
 <h2> linux 使用键盘f1-f12 </h2>
-<p>echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode</p>
+<p>echo "options hid_apple fnmode=0" | sudo tee -a /etc/modprobe.d/hid_apple.conf</p>
 </body>
 </html>
